@@ -12,6 +12,30 @@ module ISAData
 	const ϵ_kB = 97.0
 	const σ = 3.617e-10
 	
+	"""
+	    ISAdata(h::T) where T <: Real
+	
+	Returns a tuple containing air density, pressure, temperature, and dynamic viscosity at an altitude h,	according to the International Standard Atmosphere model. All quantities are in SI units.
+	
+	# Example
+	
+	```julia-repl
+	julia> ISAdata(10000)
+	(0.4136571526878796, 26510.092578167572, 223.25492665430897, 1.461852633009453e-5)
+	```
+	
+	    ISAdata(h::T) where T <: Quantity
+	
+	Returns a tuple containing air density, pressure, temperature, and dynamic viscosity at an altitude h. All quantities returned are of Quantity type with the corresponding SI units.
+	
+	# Example
+	```julia-repl
+	julia> using Unitful
+	
+	julia> ISAdata(10u"km")
+	(0.4136571526878796 kg m^-3, 26510.092578167572 Pa, 223.25492665430897 K, 1.461852633009453e-5 Pa s)
+	```
+	"""
 	function ISAdata(h::Float64)
 		
 		a :: Float64 = 0.0
