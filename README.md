@@ -2,6 +2,11 @@
 
 ISAData is a Julia package that can be used to calculate thermodynamic properties of the atmosphere (air density, pressure, temperature, and viscosity) using the **I**nternational **S**tandard **A**tmosphere (ISA) model.
 
+## Installation
+
+ISAData can be installed from Julia's REPL with the following command:
+    ]add ISAData
+
 ## Usage
 
 The package contains only one exported function called `ISAdata`. The function is called with the altitude as the input parameter, and it returns a tuple containing the values for density, pressure, temperature, and dynamic viscosity. For example:
