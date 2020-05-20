@@ -5,7 +5,9 @@ ISAData is a Julia package that can be used to calculate thermodynamic propertie
 ## Installation
 
 ISAData can be installed from Julia's REPL with the following command:
-    ]add ISAData
+```
+]add ISAData
+```
 
 ## Usage
 
