@@ -1,5 +1,5 @@
 name: TagBot
-on: push
+on:
   issue_comment:
     types:
       - created
