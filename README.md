@@ -1,5 +1,9 @@
 # ISAData
 
+| Status | Coverage |
+| :----: | :----: |
+| [![Build Status](https://travis-ci.org/HTofi/ISAData.jl.svg?branch=master)](https://travis-ci.org/HTofi/ISAData.jl) | [![codecov.io](http://codecov.io/github/HTofi/ISAData.jl/coverage.svg?branch=master)](http://codecov.io/github/HTofi/ISAData.jl?branch=master) |
+
 ISAData is a Julia package that can be used to calculate thermodynamic properties of the atmosphere (air density, pressure, temperature, and viscosity) using the **I**nternational **S**tandard **A**tmosphere (ISA) model.
 
 ## Installation
