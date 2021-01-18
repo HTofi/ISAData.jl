@@ -4,4 +4,4 @@ julia:
   - 1.5.2
 
 after_success:
-- julia -e 'using Pkg; cd(Pkg.dir("MyPkg")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+- julia -e 'using Pkg; cd(Pkg.dir("ISAData")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
